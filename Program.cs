@@ -41,6 +41,17 @@ namespace G_NET_27_OOP_5
             // C: The risk is that both the original and the copied object share the same reference-type fields in memory,
             // so changing the field through one object affects the other.
             #endregion
+
+            #region Q4
+            ///Console.WriteLine($"{e1.Title} - {e1.Dept.Name}");
+            /// => e1.Title = "Dev"      ....   e1.Dept.Name =  "Testing"
+            /// Console.WriteLine($"{e2.Title} - {e2.Dept.Name}");
+            /// => e2.Title = "QA"      ....   e1.Dept.Name =  "Testing"
+            /// because Shallow copies references for reference-type fields,
+            ///  Dept is a reference type — both e1 and e2 point to SAME object.
+              
+
+            #endregion
         }
     }
 }
